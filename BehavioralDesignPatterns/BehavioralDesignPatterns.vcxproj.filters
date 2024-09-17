@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\01 Strategy">
+      <UniqueIdentifier>{24a267bb-d56b-4a9f-994f-d8f0cca06460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01 Strategy">
+      <UniqueIdentifier>{213ab13d-b9d4-415b-9cc8-607ad5991fb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\02 Observer">
+      <UniqueIdentifier>{8a36a5e0-fe46-4d29-99a1-50d7584d4547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02 Observer">
+      <UniqueIdentifier>{9194b6bc-de92-4050-b7a9-2233ed820069}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PathCalculatorFactory.cpp">
+      <Filter>Source Files\01 Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="EmailUser.cpp">
+      <Filter>Source Files\02 Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductNotifier.cpp">
+      <Filter>Source Files\02 Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="SMSUser.cpp">
+      <Filter>Source Files\02 Observer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PathCalculatorFactory.h">
+      <Filter>Header Files\01 Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="PathCalculator.h">
+      <Filter>Header Files\01 Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="EmailUser.h">
+      <Filter>Header Files\02 Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="IUser.h">
+      <Filter>Header Files\02 Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductNotifier.h">
+      <Filter>Header Files\02 Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="SMSUser.h">
+      <Filter>Header Files\02 Observer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>
