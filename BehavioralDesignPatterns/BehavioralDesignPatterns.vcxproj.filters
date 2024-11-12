@@ -25,6 +25,12 @@
     <Filter Include="Source Files\02 Observer">
       <UniqueIdentifier>{9194b6bc-de92-4050-b7a9-2233ed820069}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\03 State">
+      <UniqueIdentifier>{14ba7284-0a0c-40fb-8e34-9fe71763bdf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\03 State">
+      <UniqueIdentifier>{87742a57-35df-43d3-965c-b20cbd612b9b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -41,6 +47,18 @@
     </ClCompile>
     <ClCompile Include="SMSUser.cpp">
       <Filter>Source Files\02 Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="03 State\src\DocumentContext.cpp">
+      <Filter>Source Files\03 State</Filter>
+    </ClCompile>
+    <ClCompile Include="03 State\src\EditingState.cpp">
+      <Filter>Source Files\03 State</Filter>
+    </ClCompile>
+    <ClCompile Include="03 State\src\ReadOnlyState.cpp">
+      <Filter>Source Files\03 State</Filter>
+    </ClCompile>
+    <ClCompile Include="03 State\src\LockedState.cpp">
+      <Filter>Source Files\03 State</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +79,30 @@
     </ClInclude>
     <ClInclude Include="SMSUser.h">
       <Filter>Header Files\02 Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="03 State\include\DocumentContext.h">
+      <Filter>Header Files\03 State</Filter>
+    </ClInclude>
+    <ClInclude Include="03 State\include\EditState.h">
+      <Filter>Header Files\03 State</Filter>
+    </ClInclude>
+    <ClInclude Include="03 State\include\ViewState.h">
+      <Filter>Header Files\03 State</Filter>
+    </ClInclude>
+    <ClInclude Include="03 State\include\IEditableState.h">
+      <Filter>Header Files\03 State</Filter>
+    </ClInclude>
+    <ClInclude Include="03 State\include\IViewableState.h">
+      <Filter>Header Files\03 State</Filter>
+    </ClInclude>
+    <ClInclude Include="03 State\include\IState.h">
+      <Filter>Header Files\03 State</Filter>
+    </ClInclude>
+    <ClInclude Include="03 State\include\ILockableState.h">
+      <Filter>Header Files\03 State</Filter>
+    </ClInclude>
+    <ClInclude Include="03 State\include\LockedState.h">
+      <Filter>Header Files\03 State</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

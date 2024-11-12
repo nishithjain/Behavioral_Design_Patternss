@@ -1,26 +1,29 @@
-
-#include "EmailUser.h"
-#include "ProductNotifier.h"
-#include "SMSUser.h"
+#include <iostream>
+#include <memory>
+#include "DocumentContext.h"
+#include "EditState.h"
+#include "ViewState.h"
+#include "LockedState.h"
 
 int main()
 {
-	// Create a product notifier (Publisher)
-	ProductNotifier product("Smartphone");
+    DocumentContext document(std::make_unique<EditState>());
 
-	// Create users (Observers)
-	const std::shared_ptr<IUser> nishith = std::make_shared<EmailUser>("Nishith");
-	const std::shared_ptr<IUser> bob = std::make_shared<SMSUser>("Bob");
+    std::cout << "Current State: Editing\n";
+    document.view();  // Should allow viewing
+    document.edit();  // Should allow editing
 
-	// Users subscribe for notifications
-	product.Subscribe(nishith);
-	product.Subscribe(bob);
+    // Change to ReadOnly state
+    document.setState(std::make_unique<ViewState>());
+    std::cout << "\nCurrent State: ReadOnly\n";
+    document.view();  // Should allow viewing in read-only mode
+    document.edit();  // Should not allow editing
 
-	// Product comes back in stock
-	product.SetInStock(true);
-
-	// Bob unsubscribes
-	product.Unsubscribe(bob);
+    // Change to Locked state
+    document.setState(std::make_unique<LockedState>());
+    std::cout << "\nCurrent State: Locked\n";
+    document.view();  // Should deny viewing
+    document.edit();  // Should deny editing
 
 	return 0;
 }

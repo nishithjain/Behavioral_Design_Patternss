@@ -1,0 +1,13 @@
+# Ignore Visual Studio temporary files
+.vs/
+
+# Ignore temporary Notes files
+"Behavioral Design Patterns Notes"/*.tmp
+"Behavioral Design Patterns Notes"/~$*
+
+# Ignore build directories and binaries
+BehavioralDesignPatterns/x64/
+x64/
+
+# Ignore temporary files
+*.tmp
